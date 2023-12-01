@@ -24,8 +24,7 @@ struct ContentView: View {
     
     var body: some View {
         
-        FlowLayoutView(features: TestFlowLayout(data: ["음음 놀랍게도"], content: { text in
-            let _ = print("몇번")
+        FlowLayoutView(features: TestFlowLayout(data: ["음음 놀랍게도", "그건 사실이야", "어이어이 마지카요", "침범이냐?"], content: { text in
             Text(text)
                 .padding(10)
                 .foregroundColor(.white)
