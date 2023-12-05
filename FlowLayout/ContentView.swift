@@ -40,8 +40,6 @@ struct ContentView: View {
     
     @State var dataLists: [String] = ["음음 놀랍게도", "그건 사실이야", "어이어이 마지카요", "침범이냐?", "음", "침범맞어?", "음 침범 맞아 다음줄로 넘어가 얼른"]
     
-//    @State var dataLists: [String] = ["음음 놀랍게도", "그건 사실이야"]
-    
     private var randomString = ["초코파이", "허쉬 초콜릿칩 미니쿠키", "복이많은집 미용티슈", "갤럭시 버즈", "심상갑", "카파", "이게머야 이게머야"]
     
     var body: some View {
