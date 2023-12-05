@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		EF8CED1A2B18545B00FD2464 /* FlowLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8CED192B18545B00FD2464 /* FlowLayoutView.swift */; };
+		EFCEB2D72B1E9F0200002D81 /* LeadingAlignmnetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCEB2D62B1E9F0200002D81 /* LeadingAlignmnetView.swift */; };
+		EFCEB2D92B1EA38600002D81 /* TrailingAlignmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCEB2D82B1EA38600002D81 /* TrailingAlignmentView.swift */; };
 		EFF308572B15B4D40050BFF1 /* FlowLayoutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF308562B15B4D40050BFF1 /* FlowLayoutApp.swift */; };
 		EFF308592B15B4D40050BFF1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF308582B15B4D40050BFF1 /* ContentView.swift */; };
 		EFF3085B2B15B4D50050BFF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFF3085A2B15B4D50050BFF1 /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		EF8CED192B18545B00FD2464 /* FlowLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayoutView.swift; sourceTree = "<group>"; };
+		EFCEB2D62B1E9F0200002D81 /* LeadingAlignmnetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadingAlignmnetView.swift; sourceTree = "<group>"; };
+		EFCEB2D82B1EA38600002D81 /* TrailingAlignmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingAlignmentView.swift; sourceTree = "<group>"; };
 		EFF308532B15B4D40050BFF1 /* FlowLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFF308562B15B4D40050BFF1 /* FlowLayoutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayoutApp.swift; sourceTree = "<group>"; };
 		EFF308582B15B4D40050BFF1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,9 +80,43 @@
 		EF8CED182B18545200FD2464 /* FlowLayoutView */ = {
 			isa = PBXGroup;
 			children = (
+				EFCEB2D42B1E9E0C00002D81 /* TopAlignment */,
+				EFCEB2D52B1E9E1000002D81 /* BottomAlignment */,
+				EFCEB2D22B1E9D1C00002D81 /* LeadingAlignment */,
+				EFCEB2D32B1E9E0800002D81 /* TrailingAlignment */,
 				EF8CED192B18545B00FD2464 /* FlowLayoutView.swift */,
 			);
 			path = FlowLayoutView;
+			sourceTree = "<group>";
+		};
+		EFCEB2D22B1E9D1C00002D81 /* LeadingAlignment */ = {
+			isa = PBXGroup;
+			children = (
+				EFCEB2D62B1E9F0200002D81 /* LeadingAlignmnetView.swift */,
+			);
+			path = LeadingAlignment;
+			sourceTree = "<group>";
+		};
+		EFCEB2D32B1E9E0800002D81 /* TrailingAlignment */ = {
+			isa = PBXGroup;
+			children = (
+				EFCEB2D82B1EA38600002D81 /* TrailingAlignmentView.swift */,
+			);
+			path = TrailingAlignment;
+			sourceTree = "<group>";
+		};
+		EFCEB2D42B1E9E0C00002D81 /* TopAlignment */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TopAlignment;
+			sourceTree = "<group>";
+		};
+		EFCEB2D52B1E9E1000002D81 /* BottomAlignment */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BottomAlignment;
 			sourceTree = "<group>";
 		};
 		EFF3084A2B15B4D40050BFF1 = {
@@ -269,8 +307,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF8CED1A2B18545B00FD2464 /* FlowLayoutView.swift in Sources */,
+				EFCEB2D92B1EA38600002D81 /* TrailingAlignmentView.swift in Sources */,
 				EFF308592B15B4D40050BFF1 /* ContentView.swift in Sources */,
 				EFF308572B15B4D40050BFF1 /* FlowLayoutApp.swift in Sources */,
+				EFCEB2D72B1E9F0200002D81 /* LeadingAlignmnetView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
