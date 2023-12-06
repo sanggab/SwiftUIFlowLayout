@@ -12,7 +12,7 @@ public protocol FlowLayoutFeatures {
     associatedtype ContentView: View
     
     var data: [Element] { get }
-    var direction: FlowDirection { get }
+//    var direction: FlowDirection { get }
     var dataSpacing: CGFloat { get }
     var lineSpacing: CGFloat { get }
     

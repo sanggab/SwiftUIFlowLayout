@@ -18,18 +18,18 @@ struct TestFlowLayout<ContentView: View>: FlowLayoutFeatures {
     typealias Element = String
 
     var data: [String]
-    var direction: FlowDirection
+//    var direction: FlowDirection
     var dataSpacing: CGFloat
     var lineSpacing: CGFloat
     var content: (String) -> ContentView
 
     init(data: [String],
-         direction: FlowDirection,
+//         direction: FlowDirection,
          dataSpacing: CGFloat = 0,
          lineSpacing: CGFloat = 0,
          @ViewBuilder content: @escaping (String) -> ContentView) {
         self.data = data
-        self.direction = direction
+//        self.direction = direction
         self.dataSpacing = dataSpacing
         self.lineSpacing = lineSpacing
         self.content = content
@@ -44,7 +44,6 @@ struct ContentView: View {
     
     var body: some View {
         LeadingAlignmnetView(features: TestFlowLayout(data: dataLists,
-                                                   direction: .leading,
                                                    dataSpacing: 8,
                                                    lineSpacing: 10,
                                                    content: { text in
@@ -57,7 +56,11 @@ struct ContentView: View {
                    .overlay(RoundedRectangle(cornerRadius: 8).stroke(lineWidth: 1))
            }))
 
-        TrailingAlignmentView(features: TestFlowLayout(data: dataLists, direction: .trailing, dataSpacing: 10, lineSpacing: 15, content: { text in
+        TrailingAlignmentView(features: TestFlowLayout(data: dataLists,
+//                                                       direction: .trailing,
+                                                       dataSpacing: 10,
+                                                       lineSpacing: 15,
+                                                       content: { text in
 
             Text(text)
                 .padding(10)
@@ -73,7 +76,7 @@ struct ContentView: View {
     func topLeadingView() -> some View {
         return Group {
             FlowLayoutView(features: TestFlowLayout(data: dataLists,
-                                                    direction: .leading,
+//                                                    direction: .leading,
                                                     dataSpacing: 8,
                                                     lineSpacing: 10,
                                                     content: { text in

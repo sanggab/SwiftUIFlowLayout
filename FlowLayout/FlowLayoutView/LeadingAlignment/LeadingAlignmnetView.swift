@@ -38,7 +38,7 @@ public struct LeadingAlignmnetView<FlowFeatures: FlowLayoutFeatures>: View {
                                 height -= features.lineSpacing
                             }
 
-                            var result: CGFloat = width
+                            let result: CGFloat = width
 
                             if index == 0 {
 

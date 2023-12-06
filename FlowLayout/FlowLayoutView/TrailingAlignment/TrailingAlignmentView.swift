@@ -58,7 +58,6 @@ public struct TrailingAlignmentView<FlowFeatures: FlowLayoutFeatures>: View {
             }
         )
         .onPreferenceChange(SizePreferenceKey.self) { size in
-            print("몇 번을 그리는거야")
             frameSize = size
         }
     }
